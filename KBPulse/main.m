@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
         [KBPPulseManager configure];
         printf("Animating keyboard. Press ctrl-c or close terminal to stop.\n");
         [NSTimer scheduledTimerWithTimeInterval:3 repeats:true block:^(NSTimer * _Nonnull timer) {
-            BOOL slowFade = false;
+            BOOL slowFade = true;
             if (slowFade && ![KBPPulseManager.sharedInstance paused] && KBPAnimator.isBright) {
                 [KBPAnimator setBrightness:0 withDuration:2500];
             }
@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
                 [KBPAnimator setBrightness:1 withDuration:2500];
             }
             else {
-            [KBPAnimator setBrightness:KBPAnimator.isBright ? 0 : 1 withDuration:KBPAnimator.isBright ? 2500 : 1000];
+                [KBPAnimator setBrightness:KBPAnimator.isBright ? 0 : 1 withDuration:KBPAnimator.isBright ? 2500 : 1000];
             }
         }];
     }
