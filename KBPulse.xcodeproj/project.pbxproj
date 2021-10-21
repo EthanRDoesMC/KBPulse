@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4FF354AF27209F3D00F7F65E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF354AE27209F3D00F7F65E /* main.m */; };
+		4FF354D82720D3B500F7F65E /* KBPPulseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF354D72720D3B500F7F65E /* KBPPulseManager.m */; };
+		4FF354DD2720DAC400F7F65E /* KBPAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF354DC2720DAC400F7F65E /* KBPAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4FF354AB27209F3D00F7F65E /* kbbright */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kbbright; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF354AB27209F3D00F7F65E /* KBPulse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KBPulse; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF354AE27209F3D00F7F65E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FF354D52720D20200F7F65E /* KeyboardBrightnessClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardBrightnessClient.h; sourceTree = "<group>"; };
+		4FF354D62720D3B500F7F65E /* KBPPulseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBPPulseManager.h; sourceTree = "<group>"; };
+		4FF354D72720D3B500F7F65E /* KBPPulseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBPPulseManager.m; sourceTree = "<group>"; };
+		4FF354D92720D3DF00F7F65E /* OSDManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSDManager.h; sourceTree = "<group>"; };
+		4FF354DB2720DAC400F7F65E /* KBPAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBPAnimator.h; sourceTree = "<group>"; };
+		4FF354DC2720DAC400F7F65E /* KBPAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBPAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +49,7 @@
 		4FF354A227209F3D00F7F65E = {
 			isa = PBXGroup;
 			children = (
-				4FF354AD27209F3D00F7F65E /* kbbright */,
+				4FF354AD27209F3D00F7F65E /* KBPulse */,
 				4FF354AC27209F3D00F7F65E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +57,31 @@
 		4FF354AC27209F3D00F7F65E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4FF354AB27209F3D00F7F65E /* kbbright */,
+				4FF354AB27209F3D00F7F65E /* KBPulse */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4FF354AD27209F3D00F7F65E /* kbbright */ = {
+		4FF354AD27209F3D00F7F65E /* KBPulse */ = {
 			isa = PBXGroup;
 			children = (
 				4FF354AE27209F3D00F7F65E /* main.m */,
+				4FF354DB2720DAC400F7F65E /* KBPAnimator.h */,
+				4FF354DC2720DAC400F7F65E /* KBPAnimator.m */,
+				4FF354D62720D3B500F7F65E /* KBPPulseManager.h */,
+				4FF354D72720D3B500F7F65E /* KBPPulseManager.m */,
+				4FF354D52720D20200F7F65E /* KeyboardBrightnessClient.h */,
+				4FF354D92720D3DF00F7F65E /* OSDManager.h */,
 			);
-			path = kbbright;
+			path = KBPulse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4FF354AA27209F3D00F7F65E /* kbbright */ = {
+		4FF354AA27209F3D00F7F65E /* KBPulse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FF354B227209F3D00F7F65E /* Build configuration list for PBXNativeTarget "kbbright" */;
+			buildConfigurationList = 4FF354B227209F3D00F7F65E /* Build configuration list for PBXNativeTarget "KBPulse" */;
 			buildPhases = (
 				4FF354A727209F3D00F7F65E /* Sources */,
 				4FF354A827209F3D00F7F65E /* Frameworks */,
@@ -77,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = kbbright;
+			name = KBPulse;
 			productName = kbbright;
-			productReference = 4FF354AB27209F3D00F7F65E /* kbbright */;
+			productReference = 4FF354AB27209F3D00F7F65E /* KBPulse */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4FF354A627209F3D00F7F65E /* Build configuration list for PBXProject "kbbright" */;
+			buildConfigurationList = 4FF354A627209F3D00F7F65E /* Build configuration list for PBXProject "KBPulse" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4FF354AA27209F3D00F7F65E /* kbbright */,
+				4FF354AA27209F3D00F7F65E /* KBPulse */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FF354AF27209F3D00F7F65E /* main.m in Sources */,
+				4FF354D82720D3B500F7F65E /* KBPPulseManager.m in Sources */,
+				4FF354DD2720DAC400F7F65E /* KBPAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,9 +256,11 @@
 		4FF354B327209F3D00F7F65E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VB9EL34RG4;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethanrdoesmc.kbpulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -250,9 +268,11 @@
 		4FF354B427209F3D00F7F65E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VB9EL34RG4;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethanrdoesmc.kbpulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -260,7 +280,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4FF354A627209F3D00F7F65E /* Build configuration list for PBXProject "kbbright" */ = {
+		4FF354A627209F3D00F7F65E /* Build configuration list for PBXProject "KBPulse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FF354B027209F3D00F7F65E /* Debug */,
@@ -269,7 +289,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FF354B227209F3D00F7F65E /* Build configuration list for PBXNativeTarget "kbbright" */ = {
+		4FF354B227209F3D00F7F65E /* Build configuration list for PBXNativeTarget "KBPulse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FF354B327209F3D00F7F65E /* Debug */,
