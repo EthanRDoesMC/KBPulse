@@ -25,4 +25,7 @@
 - (id)copyKeyboardBacklightIDs;
 - (id)init;
 
+// Auto-dim speed is 500ms
+// manual control fade speed is 350ms
+
 @end

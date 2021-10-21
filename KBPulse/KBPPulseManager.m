@@ -44,7 +44,7 @@
 
 +(void)configure {
     [self loadPrivateFrameworks];
-    [self modifyBacklightSettings];
+    //[self modifyBacklightSettings];
     [self showBezel];
 }
 

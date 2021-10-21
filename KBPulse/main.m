@@ -11,6 +11,10 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        for (NSString *argument in [NSProcessInfo processInfo].arguments) {
+            NSLog(@"%@", argument);
+            NSLog(@"Integer value: %i", [argument intValue]);
+        }
         printf("KBPulse by EthanRDoesMC\n");
         [KBPPulseManager configure];
         printf("Animating keyboard. Press ctrl-c or close terminal to stop.\n");
