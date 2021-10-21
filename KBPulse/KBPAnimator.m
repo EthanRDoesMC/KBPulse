@@ -2,7 +2,7 @@
 //  KBPAnimator.m
 //  KBPulse
 //
-//  Created by Ethan Chaffin on 10/20/21.
+//  Created by EthanRDoesMC on 10/20/21.
 //
 
 #import "KBPAnimator.h"

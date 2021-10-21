@@ -2,7 +2,7 @@
 //  KBPPulseManager.m
 //  KBPulse
 //
-//  Created by Ethan Chaffin on 10/20/21.
+//  Created by EthanRDoesMC on 10/20/21.
 //
 
 #import "KBPPulseManager.h"
@@ -28,6 +28,7 @@
 +(void)loadPrivateFrameworks {
     printf("Loading private frameworks\n");
     printf("CoreBrightness: %hhd\n",[[NSBundle bundleWithPath:@"/System/Library/PrivateFrameworks/CoreBrightness.framework"] load]);
+    [KBPPulseManager.sharedInstance setBrightnessClient:[[NSClassFromString(@"KeyboardBrightnessClient") alloc] init]];
     printf("OSD: %hhd\n",[[NSBundle bundleWithPath:@"/System/Library/PrivateFrameworks/OSD.framework"] load]);
 }
 
@@ -53,8 +54,6 @@
 
 - (id)init {
     if (self = [super init]) {
-        [KBPPulseManager loadPrivateFrameworks];
-        self.brightnessClient = [[NSClassFromString(@"KeyboardBrightnessClient") alloc] init];
         self.paused = false;
     }
     return self;

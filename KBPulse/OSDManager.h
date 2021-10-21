@@ -2,7 +2,7 @@
 //  OSDManager.h
 //  KBPulse
 //
-//  Created by Ethan Chaffin on 10/20/21.
+//  Created by EthanRDoesMC on 10/20/21.
 //
 
 @interface OSDManager : NSObject

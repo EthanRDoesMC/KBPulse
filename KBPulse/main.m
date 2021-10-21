@@ -2,7 +2,7 @@
 //  main.m
 //  KBPulse
 //
-//  Created by Ethan Chaffin on 10/20/21.
+//  Created by EthanRDoesMC on 10/20/21.
 //
 
 #import <Foundation/Foundation.h>
@@ -15,6 +15,7 @@ int main(int argc, const char * argv[]) {
         [KBPPulseManager configure];
         printf("Animating keyboard. Press ctrl-c or close terminal to stop.\n");
         [NSTimer scheduledTimerWithTimeInterval:3 repeats:true block:^(NSTimer * _Nonnull timer) {
+            // todo: this should be configurable and modular. 
             BOOL slowFade = true;
             if (slowFade && ![KBPPulseManager.sharedInstance paused] && KBPAnimator.isBright) {
                 [KBPAnimator setBrightness:0 withDuration:2500];
