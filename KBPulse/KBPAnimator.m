@@ -27,7 +27,7 @@
 }
 
 +(BOOL)isBright {
-    return self.currentBrightness == 1.0 ? true : false;
+    return self.currentBrightness == 1.0;
 }
 
 @end
