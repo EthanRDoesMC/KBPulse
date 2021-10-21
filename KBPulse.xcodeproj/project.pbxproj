@@ -33,6 +33,8 @@
 		4FF354D92720D3DF00F7F65E /* OSDManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSDManager.h; sourceTree = "<group>"; };
 		4FF354DB2720DAC400F7F65E /* KBPAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBPAnimator.h; sourceTree = "<group>"; };
 		4FF354DC2720DAC400F7F65E /* KBPAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBPAnimator.m; sourceTree = "<group>"; };
+		4FF355912722124900F7F65E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4FF355922722124900F7F65E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,8 @@
 		4FF354A227209F3D00F7F65E = {
 			isa = PBXGroup;
 			children = (
+				4FF355922722124900F7F65E /* LICENSE */,
+				4FF355912722124900F7F65E /* README.md */,
 				4FF354AD27209F3D00F7F65E /* KBPulse */,
 				4FF354AC27209F3D00F7F65E /* Products */,
 			);

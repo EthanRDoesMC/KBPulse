@@ -1,5 +1,5 @@
-# KBPulse
-## Pulse the MacBook keyboard backlight
+<h1 align="center">KBPulse</h1>
+<h3 align="center">Pulse the backlight on your Mac keyboard</h3>
 
 Just build in Xcode.
 
