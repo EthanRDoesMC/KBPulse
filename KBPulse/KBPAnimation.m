@@ -20,11 +20,11 @@
 -(id)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        _name = dictionary[@"Name"];
-        _comment = dictionary[@"Description"];
-        _brightness = dictionary[@"Brightness"];
-        _fadeDuration = dictionary[@"Fade Duration"];
-        _delay = dictionary[@"Delay"];
+        _name = dictionary[@"Name"] ? dictionary[@"Name"] : @"";
+        _comment = dictionary[@"Description"] ? dictionary[@"Description"] : @"";
+        _brightness = dictionary[@"Brightness"] ? dictionary[@"Brightness"] : 0.0;
+        _fadeDuration = dictionary[@"Fade Duration"] ? dictionary[@"Fade Duration"] : 0;
+        _delay = dictionary[@"Delay"] ? dictionary[@"Delay"] : 0;
     }
     return self;
 }

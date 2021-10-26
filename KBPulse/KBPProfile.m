@@ -21,12 +21,12 @@
     self = [super init];
     if (self) {
         NSDictionary * profile = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:filePath] options:NSJSONReadingMutableLeaves error:nil];
-        _name = profile[@"Name"];
-        _versionNumber = profile[@"Version"];
-        _comment = profile[@"Description"];
-        _author = profile[@"Author"];
-        _homepage = profile[@"Homepage"];
-        _previewImageURL = profile[@"Preview Image URL"];
+        _name = profile[@"Name"] ? profile[@"Name"] : @"";
+        _versionNumber = profile[@"Version"] ? profile[@"Version"] : @"";
+        _comment = profile[@"Description"] ? profile[@"Description"] : @"";
+        _author = profile[@"Author"] ? profile[@"Author"] : @"";
+        _homepage = profile[@"Homepage"] ? profile[@"Homepage"] : @"";
+        _previewImageURL = profile[@"Preview Image URL"] ? profile[@"Preview Image URL"] : @"";
         NSMutableArray * animationArray = [NSMutableArray new];
         for (NSDictionary * animation in profile[@"Animations"]) {
             [animationArray addObject:[[KBPAnimation alloc] initWithDictionary:animation]];
