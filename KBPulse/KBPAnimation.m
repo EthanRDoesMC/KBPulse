@@ -10,7 +10,7 @@
 @implementation KBPAnimation
 
 -(NSNumber *)totalDuration {
-    return [NSNumber numberWithInt:(_fadeDuration.intValue + _delay.intValue)];
+    return @(_fadeDuration.intValue + _delay.intValue);
 }
 
 -(NSDictionary *)animationDictionary {
@@ -20,11 +20,11 @@
 -(id)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        _name = dictionary[@"Name"] ? dictionary[@"Name"] : @"";
-        _comment = dictionary[@"Description"] ? dictionary[@"Description"] : @"";
-        _brightness = dictionary[@"Brightness"] ? dictionary[@"Brightness"] : [NSNumber numberWithDouble:0.0];
-        _fadeDuration = dictionary[@"Fade Duration"] ? dictionary[@"Fade Duration"] : [NSNumber numberWithInteger:0];
-        _delay = dictionary[@"Delay"] ? dictionary[@"Delay"] : [NSNumber numberWithInteger:0];
+        _name = dictionary[@"Name"] ?: @"";
+        _comment = dictionary[@"Description"] ?: @"";
+        _brightness = dictionary[@"Brightness"] ?: [NSNumber numberWithDouble:0.0];
+        _fadeDuration = dictionary[@"Fade Duration"] ?: [NSNumber numberWithInteger:0];
+        _delay = dictionary[@"Delay"] ?: [NSNumber numberWithInteger:0];
     }
     return self;
 }
