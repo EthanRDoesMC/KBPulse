@@ -44,12 +44,20 @@
 
 +(void)configure {
     [self loadPrivateFrameworks];
-    //[self modifyBacklightSettings];
+    [self modifyBacklightSettings];
     [self showBezel];
 }
 
 +(KeyboardBrightnessClient *)brightnessClient {
     return [KBPPulseManager.sharedInstance brightnessClient];
+}
+
++(NSString *)configurationFile {
+    NSString * configuration = @"Yawn";
+    if ([NSProcessInfo.processInfo arguments][1]) {
+        configuration = [NSString stringWithFormat:@"/KBPulse/%@.json", NSProcessInfo.processInfo.arguments[1] ];
+    }
+    return configuration;
 }
 
 - (id)init {

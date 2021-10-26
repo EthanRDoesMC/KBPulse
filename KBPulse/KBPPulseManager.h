@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(id)sharedInstance;
 +(void)configure;
 +(KeyboardBrightnessClient *)brightnessClient;
++(NSString *)configurationFile;
 @end
 
 NS_ASSUME_NONNULL_END
