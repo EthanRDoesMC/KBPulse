@@ -72,13 +72,6 @@
     fadeOutAnimation.fadeDuration = [NSNumber numberWithInteger:2500];
     fadeOutAnimation.delay = [NSNumber numberWithInteger:0];
 
-    //        KBPAnimation * delayAnimation = [KBPAnimation new];
-    //        delayAnimation.name = @"Delay";
-    //        delayAnimation.comment = @"Delays the animation because test";
-    //        delayAnimation.brightness = [NSNumber numberWithInteger:0];
-    //        delayAnimation.fadeDuration = [NSNumber numberWithInteger:0];
-    //        delayAnimation.delay = [NSNumber numberWithInteger:3000];
-
     slowFadeProfile.animations = @[ fadeInAnimation, fadeOutAnimation, /*delayAnimation*/ ];
     return slowFadeProfile;
 }
