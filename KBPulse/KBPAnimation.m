@@ -22,9 +22,9 @@
     if (self) {
         _name = dictionary[@"Name"] ?: @"";
         _comment = dictionary[@"Description"] ?: @"";
-        _brightness = dictionary[@"Brightness"] ?: [NSNumber numberWithDouble:0.0];
-        _fadeDuration = dictionary[@"Fade Duration"] ?: [NSNumber numberWithInteger:0];
-        _delay = dictionary[@"Delay"] ?: [NSNumber numberWithInteger:0];
+        _brightness = dictionary[@"Brightness"] ?: @0.0;
+        _fadeDuration = dictionary[@"Fade Duration"] ?: @0;
+        _delay = dictionary[@"Delay"] ?: @0;
     }
     return self;
 }
